@@ -1,0 +1,16 @@
+{
+  "znamka": 7,
+  "slabiny": [
+    "Sekcia Kontakt (mobil, bunky 6–7) je len holý zoznam štítkov a údajov pod sebou (telefón, e-mail, sídlo, IČO/DIČ, obchodný register) bez obrázka a bez štruktúry. Pôsobí odfláknuto, čo Rafael už raz odmietol. Oprava: telefón a e-mail dať hore ako dve veľké dotykové karty (tel: a mailto:) a k adrese pridať fotku vozového parku alebo malú výseč mapy s bodom Ľubotice, rovnakou ako v sekcii „Na trase“. Fakturačné údaje (IČO, DIČ, IČ DPH, OR) presunúť do pätičky, kde už aj tak sú. Na PC skontrolovať, že sekcia Kontakt nie je rovnako prázdna (v koláži PC chýba).",
+    "Fotky sú málo využité a zle orezané. V sekcii „Čo prepravujeme“ je na PC fotka Scania iba malý obdĺžnik v ľavom stĺpci, ktorý pôsobí ako výplň. Na mobile (bunky 3–4) je orezaná na pás oblohy a vrch kabíny. V hero na mobile je fotka vozového parku až pod formulárom a v prvej obrazovke je z nej len okraj. Oprava: v „Čo prepravujeme“ dať Scaniu ako vysoký sticky obraz cez celú výšku zoznamu s object-position na kabíny, na mobile s pomerom 4:3 a bez oblohy. V mobilnom hero dať fotku hneď pod H1 (pomer 16:10) a mini formulár Odkiaľ → Kam až za ňu.",
+    "Hlavička: logo Calibra je malé (cca 50 px na šírku) a pochádza z 173×81 px rastra, takže podnadpis „spol. s r.o.“ je nečitateľný a značka na prvý pohled zaniká. Oprava: logo prekresliť do SVG (modrý oblúk + „alibra“ v #005297) a zväčšiť na 120–140 px na PC a 100 px na mobile. Zelenú #356635 z brandu používať dôslednejšie (bod „Kam“, linky v hlavičke sekcií), aby paleta nebola len modrá s bielou a web nepôsobil ako generická korporátna šablóna."
+  ],
+  "silne": [
+    "Jasný koncept trasy Odkiaľ → Kam: prerušovaná čiara spája mini formulár v hero, mapu SK–ČR s bodom Ľubotice a veľký dopytový formulár. Nápad vychádza z oboru a vidno ho vo viacerých sekciách.",
+    "Brand sedí: logo vľavo, modrá #005297 ako hlavná farba a vlastné fotky kamiónov firmy, žiadne stocky.",
+    "Pravdivý obsah: všetky údaje (od roku 1992, FTL, ATP, muldové návesy, Ľubotice, IČO) majú oporu v briefe. Žiadne vymyslené čísla ani recenzie.",
+    "Konverzia je silná: CTA „Dopyt prepravy“ je v hlavičke, v hero je rýchly formulár a služby majú odkazy „Dopyt →“, ktoré predvyplnia formulár.",
+    "Technicky čisté: QA bez chýb, nič nepretečie na 6 šírkach, 0,48 MB, typografia s Archivo zvláda slovenskú diakritiku."
+  ],
+  "verdikt": "opravit – solídny, pravdivý B2B redesign v brande Calibry so zmysluplným konceptom trasy, ale holá sekcia Kontakt, slabo využité a zle orezané fotky a drobné logo ho držia pod hranicou na odoslanie."
+}

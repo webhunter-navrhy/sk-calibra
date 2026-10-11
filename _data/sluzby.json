@@ -1,0 +1,32 @@
+[
+ {
+  "id": "palety",
+  "nazev": "Paletizovaný tovar",
+  "popis": "Celé kamióny (FTL) aj čiastočné zásielky",
+  "volba": "Paletizovaný tovar"
+ },
+ {
+  "id": "zvitky",
+  "nazev": "Oceľové zvitky",
+  "popis": "Preprava v muldových návesoch",
+  "volba": "Oceľové zvitky"
+ },
+ {
+  "id": "stavebne",
+  "nazev": "Stavebné materiály",
+  "popis": "Vnútroštátne aj medzinárodné prepravy",
+  "volba": "Stavebné materiály"
+ },
+ {
+  "id": "atp",
+  "nazev": "Tovar v chlade",
+  "popis": "Mraziarenské vozidlá podľa dohody ATP",
+  "volba": "Tovar v chlade (ATP)"
+ },
+ {
+  "id": "expres",
+  "nazev": "Expresná preprava",
+  "popis": "Aj čiastočné zásielky, nielen celé kamióny",
+  "volba": "Expresná alebo čiastočná zásielka"
+ }
+]

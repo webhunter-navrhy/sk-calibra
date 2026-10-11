@@ -1,0 +1,90 @@
+{% extends "_base.html" %}
+{% set titulek = 'Kamiónová doprava SK–ČR, špedícia | CALIBRA, Ľubotice' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-top">
+    <div class="hero-text">
+      <p class="stitok">Ľubotice<span class="stitok-dlhy"> · medzinárodná kamiónová doprava</span> · od roku 1992</p>
+      <h1>Kamiónová doprava medzi Slovenskom a Českom</h1>
+    </div>
+    <p class="uvod">Calibra je jednou z najstarších dopravných firiem na Slovensku.<span class="uvod-dlhy"> Hlavnou činnosťou je medzinárodná kamiónová doprava v rámci EÚ so špecializáciou na FTL prepravy medzi SR a ČR. Popri tom zabezpečujeme špedíciu a zasielateľstvo.</span></p>
+  </div>
+  <div class="hero-pas">
+    <div class="hero-foto">
+      {{ img('vozovy-park.jpg', 'Rad nákladných vozidiel Calibra na parkovisku pred halou', sizes='100vw') }}
+    </div>
+    <form class="rychly wrap" id="rychly" aria-label="Rýchly dopyt prepravy" novalidate>
+      <label class="pole pole-od"><span>Odkiaľ</span><input data-rychly="odkial" autocomplete="off" placeholder="Mesto alebo PSČ"></label>
+      <span class="rychly-ciara" aria-hidden="true"></span>
+      <label class="pole pole-kam"><span>Kam</span><input data-rychly="kam" autocomplete="off" placeholder="Mesto alebo PSČ"></label>
+      <button type="submit">Dopyt prepravy</button>
+    </form>
+  </div>
+</section>
+
+<section class="sekce" id="o-nas" aria-labelledby="o-nas-nadpis">
+  <div class="wrap">
+    <div class="o-nas-grid">
+      <div class="o-nas-text">
+        <h2 id="o-nas-nadpis">Na trase od roku 1992</h2>
+        <p class="o-nas-uvod">Hlavnou činnosťou sú FTL prepravy, celé kamióny medzi Slovenskom a Českou republikou, a medzinárodná kamiónová doprava v rámci EÚ. Za sebou máme dlhoročné skúsenosti v doprave a profesionálny tím.</p>
+      </div>
+      <figure class="mapa-obal">
+        {% include "_mapa.html" %}
+        <figcaption>FTL · full truck load · Ľubotice → Česká republika</figcaption>
+      </figure>
+    </div>
+    <ul role="list" class="fakta">
+      <li><h3>Vlastné kapacity a overení dopravcovia</h3><p>Kombinácia vlastných dopravných kapacít s kapacitami overených dopravcov dáva široké možnosti a zvyšuje flexibilitu pri plnení Vašich prepravných požiadaviek.</p></li>
+      <li><h3>Vozový park</h3><p>Vozový park spĺňa najprísnejšie emisné normy. Oceľové zvitky vozíme v muldových návesoch, tovar v chlade mraziarenskými vozidlami podľa dohody ATP.</p></li>
+      <li><h3>Špedícia a zasielateľstvo</h3><p>Popri vlastnej kamiónovej doprave poskytujeme aj služby špedície a zasielateľstva.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce sluzby" id="sluzby" aria-labelledby="sluzby-nadpis">
+  <div class="wrap sluzby-grid">
+    <div class="sluzby-hlava">
+      <h2 id="sluzby-nadpis">Čo prepravujeme</h2>
+      <p>Vyberte druh tovaru a dopyt sa Vám predvyplní.</p>
+      <div class="sluzby-foto">
+        {{ img('scania.jpg', 'Červené ťahače Scania z vozového parku Calibra', sizes='(min-width: 62rem) 36vw, 100vw') }}
+      </div>
+    </div>
+    <ul role="list" class="rejstrik">
+      {% for s in data.sluzby %}
+      <li><a href="#dopyt" data-tovar="{{ s.id }}"><span class="r-nazev">{{ s.nazev }}</span>{% if s.popis %}<span class="r-popis">{{ s.popis }}</span>{% endif %}<span class="r-sipka">Dopyt <b aria-hidden="true">→</b></span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce dopyt-sekce" id="dopyt" aria-labelledby="dopyt-nadpis">
+  <div class="wrap dopyt-grid">
+    <div class="dopyt-text">
+      <svg class="dopyt-trasa" viewBox="0 0 240 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M24 12 H216"/><circle class="kam" cx="228" cy="12" r="7"/></svg>
+      <h2 id="dopyt-nadpis">Dopyt prepravy</h2>
+      <p>Napíšte, odkiaľ kam a čo treba prepraviť. Ozveme sa Vám s kalkuláciou ceny a odpovieme na otázky ohľadom služieb.</p>
+      <p class="poriadok"><a href="{{ site.firma.poriadok }}" rel="noopener">Prepravný poriadok (PDF)</a></p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt" aria-labelledby="kontakt-nadpis">
+  <div class="wrap kontakt-grid">
+    <div class="kontakt-hlava">
+      <h2 id="kontakt-nadpis">Kontakt</h2>
+      {% include "_mapa_mini.html" %}
+    </div>
+    <dl class="kontakt-udaje">
+      <div><dt>Telefón</dt><dd><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></dd></div>
+      <div><dt>Sídlo spoločnosti</dt><dd>{{ site.nazev }}<br>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</dd></div>
+      <div><dt>Údaje</dt><dd>IČO: {{ site.ico }}<br>DIČ: {{ site.firma.dic }}<br>IČ DPH: {{ site.firma.icdph }}</dd></div>
+      <div><dt>Obchodný register</dt><dd>{{ site.firma.or }}</dd></div>
+    </dl>
+  </div>
+</section>
+{% endblock %}

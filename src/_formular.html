@@ -1,0 +1,31 @@
+{# Dopyt prepravy. Ukážkový režim: nič sa neodosiela (site.formular.demo). #}
+<form class="formular dopyt" id="dopyt-formular" method="post" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}">
+  <div class="trasa-polia">
+    <label class="pole pole-od"><span>Odkiaľ</span><input name="odkial" autocomplete="off" placeholder="Mesto alebo PSČ nakládky" required></label>
+    <label class="pole pole-kam"><span>Kam</span><input name="kam" autocomplete="off" placeholder="Mesto alebo PSČ vykládky" required></label>
+  </div>
+  <div class="pole-riadok">
+    <label class="pole"><span>Druh tovaru</span>
+      <select name="tovar">
+        <option value="">Vyberte</option>
+        {% for s in data.sluzby %}<option value="{{ s.id }}">{{ s.volba }}</option>{% endfor %}
+        <option value="ine">Iný tovar</option>
+      </select>
+    </label>
+    <label class="pole"><span>Hmotnosť zásielky (kg)</span><input name="hmotnost" inputmode="decimal" autocomplete="off" placeholder="napr. 18 000"></label>
+    <label class="pole"><span>Termín nakládky</span><input name="termin" type="date"></label>
+  </div>
+  <div class="pole-riadok">
+    <label class="pole"><span>Meno / firma</span><input name="jmeno" autocomplete="name" required></label>
+    <label class="pole"><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
+    <label class="pole"><span>Telefón</span><input name="telefon" type="tel" autocomplete="tel"></label>
+  </div>
+  <label class="pole"><span>Poznámka k zásielke</span><textarea name="zprava" rows="3"></textarea></label>
+  <div class="past" aria-hidden="true"><label>Nevyplňovať <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+  <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+  <label class="souhlas"><input type="checkbox" name="gdpr" required><span>Súhlasím so spracovaním osobných údajov na účely vybavenia dopytu.</span></label>
+  <div class="odeslat">
+    <button type="submit">Odoslať dopyt</button>
+    <p class="formular-stav" role="status" aria-live="polite"></p>
+  </div>
+</form>

@@ -1,0 +1,116 @@
+{
+ "slug": "sk-calibra",
+ "zdroj_url": "https://www.calibra.sk/",
+ "firma": "CALIBRA, spol. s r.o.",
+ "obor": [
+  "nákladná a medzinárodná kamiónová doprava, špedícia"
+ ],
+ "ico": "31657486",
+ "ares": {
+  "chyba": "ARES HTTP 404"
+ },
+ "kontakty": {
+  "emaily": [
+   "calibra@calibra.sk"
+  ],
+  "telefony": [
+   "+421 904 890 866 (zverejnený na ich webe)"
+  ],
+  "adresa": "Strojnícka 1/A, 080 06 Ľubotice",
+  "socialni_site": []
+ },
+ "logo": {
+  "soubor": "podklady/logo.png",
+  "zdroj": "https://www.calibra.sk/_sub/calibra/images/logo.png",
+  "rozmery": [
+   173,
+   81
+  ]
+ },
+ "barvy": {
+  "primarni": "#005297 (logo)",
+  "sekundarni": "#356635, #428bca (calibra_layout.css)",
+  "doporucene": [
+   "#005297",
+   "#356635",
+   "#428bca"
+  ]
+ },
+ "fotky": [
+  {
+   "soubor": "podklady/foto/foto-01.mpo",
+   "url": "https://www.calibra.sk/_sub/calibra/images/slide/slide-1.jpg",
+   "sirka": 3658,
+   "vyska": 1821,
+   "alt": "First slide"
+  },
+  {
+   "soubor": "podklady/foto/foto-02.jpg",
+   "url": "https://www.calibra.sk/_sub/calibra/images/slide/slide-2.jpg",
+   "sirka": 1898,
+   "vyska": 945,
+   "alt": "Second slide"
+  }
+ ],
+ "fakta": [
+  {
+   "text": "jedna z najstarších dopravných firiem na SK, od roku 1992",
+   "zdroj": "https://www.calibra.sk/"
+  },
+  {
+   "text": "medzinárodná kamiónová doprava v EÚ, špecializácia FTL medzi SK a ČR",
+   "zdroj": "https://www.calibra.sk/"
+  },
+  {
+   "text": "špedícia a zasielateľstvo",
+   "zdroj": "https://www.calibra.sk/"
+  },
+  {
+   "text": "vlastné kapacity + kapacity overených dopravcov",
+   "zdroj": "https://www.calibra.sk/"
+  },
+  {
+   "text": "vozový park spĺňajúci najprísnejšie emisné normy",
+   "zdroj": "https://www.calibra.sk/"
+  },
+  {
+   "text": "služby: paletizovaný tovar; oceľové zvitky v muldových návesoch; stavebné materiály; mraziarenské vozidlá (ATP); expres a čiastočné zásielky",
+   "zdroj": "https://www.calibra.sk/"
+  },
+  {
+   "text": "sídlo Strojnícka 1/A, 080 06 Ľubotice; IČO 31657486; DIČ 2020518489; IČ DPH SK2020518489; OR OS Prešov vl. č. 605/P",
+   "zdroj": "https://www.calibra.sk/"
+  },
+  {
+   "text": "calibra@calibra.sk, +421 904 890 866",
+   "zdroj": "https://www.calibra.sk/"
+  },
+  {
+   "text": "prepravný poriadok (PDF) na pôvodnom webe",
+   "zdroj": "https://www.calibra.sk/"
+  }
+ ],
+ "chybi": [
+  "viac fotiek (vozidlá pri práci, nakládka, sklad; teraz len 2 z ich webu)",
+  "logo vo vyššom rozlíšení / vektor (máme 173x81 px)",
+  "potvrdenie, či má web zobrazovať telefón a prípadne mená/kontakty dispečerov",
+  "potvrdenie, kam majú chodiť dopyty (calibra@calibra.sk?)",
+  "text prepravného poriadku, ak má byť priamo na webe (zatiaľ odkaz na PDF na pôvodnom webe)",
+  "prípadné ďalšie krajiny/trasy mimo SK–ČR, ak ich firma chce uviesť (nepísané, na webe sa nespomínajú)"
+ ],
+ "popis_webu": "Calibra - Dopravná firma s dlhoročnými skúsenosťami - medzinárodná doprava, kamiónová doprava, full truck load",
+ "mesto": "Ľubotice",
+ "ton": "vecný, korektný B2B; formálne vykanie; bez superlatívov",
+ "foto": [
+  {
+   "soubor": "img/vozovy-park.jpg",
+   "zdroj": "https://www.calibra.sk/_sub/calibra/images/slide/slide-1.jpg",
+   "rozmery": "3658x1821"
+  },
+  {
+   "soubor": "img/scania.jpg",
+   "zdroj": "https://www.calibra.sk/_sub/calibra/images/slide/slide-2.jpg",
+   "rozmery": "1898x945"
+  }
+ ]
+}

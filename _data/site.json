@@ -1,0 +1,35 @@
+{
+  "slug": "sk-calibra",
+  "nazev": "CALIBRA, spol. s r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-calibra/",
+  "base": "/sk-calibra/",
+  "lang": "sk",
+  "popis": "CALIBRA, spol. s r.o., Ľubotice: medzinárodná kamiónová doprava, FTL prepravy medzi Slovenskom a Českou republikou, špedícia a zasielateľstvo od roku 1992.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "vozovy-park.jpg",
+  "logo": "logo.png",
+  "theme_color": "#005297",
+  "typ": "LocalBusiness",
+  "ico": "31657486",
+  "kontakt": {
+    "email": "calibra@calibra.sk",
+    "telefon": "+421 904 890 866",
+    "adresa": { "ulice": "Strojnícka 1/A", "psc": "080 06", "mesto": "Ľubotice", "zeme": "SK" }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": { "endpoint": "", "demo": true, "predmet": "Dopyt prepravy z webu CALIBRA" },
+  "nav": [
+    { "text": "Služby", "href": "#sluzby" },
+    { "text": "O nás", "href": "#o-nas" },
+    { "text": "Kontakt", "href": "#kontakt" }
+  ],
+  "firma": {
+    "dic": "2020518489",
+    "icdph": "SK2020518489",
+    "or": "Okresný súd Prešov, vložka číslo 605/P",
+    "poriadok": "https://www.calibra.sk/_sub/calibra/files/calibra_prepravny_poriadok.pdf"
+  }
+}
